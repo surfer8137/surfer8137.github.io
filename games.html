@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Portafolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">        
+    </head>
+    <body> 
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container"> 
+                <ul class="nav navbar-nav navbar-left">
+                    <a href="index.html" class="navbar-link"> <button type="button" class="btn btn-default navbar-btn">Main</button></a>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="row"> 
+            <a href="games/farmingWEB/farmingWEB.html"><img  src="images/games.png" id="farmer" class="img-responsive img-thumbnail  col-sm-6" onmouseover="imageTextGame('images/farmerText.png')"  onmouseout="imageTextGame('images/games.png')" alt=".."> </a>
+            <a href="games/2dgtaWEB/2dgtaWEB.html"><img  src="images/games.png" id="farmer" class="img-responsive img-thumbnail  col-sm-6" alt=".."> </a>
+        </div> 
+        <div class="row"> 
+            <a href="games/3dshooterWEB/3dshooterWEB.html"><img  src="images/games.png" id="farmer" class="img-responsive img-thumbnail  col-sm-6" alt=".."> </a>
+            <a href="games/3rdpersonWEB/3rdpersonWEB.html"><img  src="images/games.png" id="farmer" class="img-responsive img-thumbnail  col-sm-6" alt=".."> </a>
+        </div> 
+        <div class="row"> 
+            <a href="games/isaacofbindingWEB/isaacofbindingWEB.html"><img  src="images/games.png" id="farmer" class="img-responsive img-thumbnail  col-sm-6" alt=".."> </a>
+            <a href="games/ohmyfishWEB/ohmyfishWEB.html"><img  src="images/games.png" id="farmer" class="img-responsive img-thumbnail  col-sm-6" alt=".."> </a>
+        </div> 
+        <div class="row"> 
+            <a href="games/shooterWEB/shooterWEB.html"><img  src="images/games.png" id="farmer" class="img-responsive img-thumbnail  col-sm-6" alt=".."> </a>
+            <a href="games/spaceinvadersWEB/spaceinvadersWEB.html"><img  src="images/games.png" id="farmer" class="img-responsive img-thumbnail  col-sm-6" alt=".."> </a>
+        </div> 
+        <div class="row"> 
+            <a href="games/terracraftWEB/terracraftWEB.html"><img  src="images/games.png" id="farmer" class="img-responsive img-thumbnail  col-sm-6" alt=".."> </a> 
+        </div> 
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+
+
+                function imageTextGame(newImage) {
+                    document.getElementById("farmer").src = newImage;
+                }
+
+                function imageTextPlant(newImage) {
+                    document.getElementById("imagePlant").src = newImage;
+                }
+
+                function imageTextContact(newImage) {
+                    document.getElementById("imageContact").src = newImage;
+                }
+
+                function imageTextAbout(newImage) {
+                    document.getElementById("imageAbout").src = newImage;
+                }
+
+
+
+
+
+        </script>
+
+    </body>
+</html>
