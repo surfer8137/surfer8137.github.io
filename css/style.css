@@ -1,5 +1,6 @@
-h2{
+h2, h1{
   word-wrap: break-word;
+  text-align: center;
 }
 
 .main-image{
@@ -45,4 +46,8 @@ h2{
 .jumbotron p {
     color: #fff;
     font-size: 20px;
+}
+
+.home{
+  
 }
