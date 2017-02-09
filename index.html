@@ -7,17 +7,53 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="jumbotron">
-    <div class="bg-overlay animated">
-      <div class="container">
-        <h1>Welcome to my portfolio!</h1>
-        <a class="btn btn-primary btn-lg" href="elements.html" id="explore">Explore</a>
-        <a class="btn btn-primary btn-lg" id="xd">xd</a>
+  <div id="index" class="index-depth">
+    <div  class="jumbotron">
+      <div class="bg-overlay animated">
+        <div class="container">
+          <h1>Welcome to my portfolio!</h1>
+          <a class="btn btn-primary btn-lg" id="explore">Explore</a>
+        </div>
       </div>
     </div>
   </div>
-  <hr>
-  <hr>
+  <div id="elements" class="elements-depth">
+    <hr>
+    <div class="row">
+      <div class="col-lg-6 text-center">
+        <img class="img-circle" src="img/code.PNG" alt="Generic placeholder image" width="140" height="140">
+        <h2>Knowledge</h2>
+        <p><a class="btn btn-default" href="./knowledge.html" role="button">View details »</a></p>
+      </div><!-- /.col-lg-3 -->
+      <div class="col-lg-6 text-center">
+        <img class="img-circle" src="img/project.jpg" alt="Generic placeholder image" width="140" height="140">
+        <h2>Projects WIP</h2>
+        <p><a class="btn btn-default" href="https://github.com/surfer8137" role="button">View details »</a></p>
+      </div><!-- /.col-lg-3 -->
+    </div>
+    <div class="row">
+
+      <div class="col-lg-12 text-center">
+        <img class="img-circle" src="img/project.jpg" alt="Generic placeholder image" width="140" height="140">
+        <h2>Experience WIP</h2>
+        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+      </div><!-- /.col-lg-3 -->
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 text-center">
+        <img class="img-circle" src="img/me.png" alt="Generic placeholder image" width="140" height="140">
+        <h2>About WIP</h2>
+        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+      </div><!-- /.col-lg-3 -->
+      <div class="col-lg-6 text-center">
+        <img class="img-circle" src="img/me.png" alt="Generic placeholder image" width="140" height="140">
+        <h2>Contact WIP</h2>
+        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+      </div><!-- /.col-lg-3 -->
+    </div>
+    <hr>
+  </div>
   <footer>
   </footer>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -26,12 +62,15 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script>
-  $('#xd').click(
+  $('#elements').hide();
+  $('#explore').click(
     function() {
-      $("body,html").animate({ 'zoom': 0 }, 500);
+      $("#index").animate({ 'zoom': 0 }, 1000);
+      $('#elements').show();
       setTimeout(function(){
-        window.location.href = 'index.html';
-      }, 300);
+        $( "#index").remove();
+      }, 950);
+      $("#explore").remove();
     }
   );
   </script>

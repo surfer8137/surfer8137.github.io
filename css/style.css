@@ -49,5 +49,19 @@ h2, h1{
 }
 
 .home{
-  
+
+}
+
+.index-depth{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.elements-depth{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
