@@ -8,9 +8,9 @@
 </head>
 <body>
   <div id="index" class="index-depth">
-    <div  class="jumbotron">
-      <div class="bg-overlay animated">
-        <div class="container">
+    <div id="jumbotron" class="jumbotron">
+      <div  id="jumbotron-background" class="bg-overlay animated">
+        <div id="welcome" class="container">
           <h1>Welcome to my portfolio!</h1>
           <a class="btn btn-primary btn-lg" id="explore">Explore</a>
         </div>
@@ -21,33 +21,31 @@
     <hr>
     <div class="row">
       <div class="col-lg-6 text-center">
-        <img class="img-circle" src="img/code.PNG" alt="Generic placeholder image" width="140" height="140">
+        <img class="img-circle" src="img/code.PNG" alt="Generic placeholder image" width="180" height="180">
         <h2>Knowledge</h2>
         <p><a class="btn btn-default" href="./knowledge.html" role="button">View details »</a></p>
       </div><!-- /.col-lg-3 -->
       <div class="col-lg-6 text-center">
-        <img class="img-circle" src="img/project.jpg" alt="Generic placeholder image" width="140" height="140">
+        <img class="img-circle" src="img/project.jpg" alt="Generic placeholder image" width="180" height="180">
         <h2>Projects WIP</h2>
         <p><a class="btn btn-default" href="https://github.com/surfer8137" role="button">View details »</a></p>
       </div><!-- /.col-lg-3 -->
     </div>
     <div class="row">
-
       <div class="col-lg-12 text-center">
-        <img class="img-circle" src="img/project.jpg" alt="Generic placeholder image" width="140" height="140">
+        <img class="img-circle" src="img/project.jpg" alt="Generic placeholder image" width="180" height="180">
         <h2>Experience WIP</h2>
         <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
       </div><!-- /.col-lg-3 -->
     </div>
-
     <div class="row">
       <div class="col-lg-6 text-center">
-        <img class="img-circle" src="img/me.png" alt="Generic placeholder image" width="140" height="140">
+        <img class="img-circle" src="img/me.png" alt="Generic placeholder image" width="180" height="180">
         <h2>About WIP</h2>
         <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
       </div><!-- /.col-lg-3 -->
       <div class="col-lg-6 text-center">
-        <img class="img-circle" src="img/me.png" alt="Generic placeholder image" width="140" height="140">
+        <img class="img-circle" src="img/me.png" alt="Generic placeholder image" width="180" height="180">
         <h2>Contact WIP</h2>
         <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
       </div><!-- /.col-lg-3 -->
@@ -62,14 +60,32 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script>
-  $('#elements').hide();
-  $('#explore').click(
+
+  adjustHeightElementToWindow = function(elementId){
+    var element = document.getElementById(elementId);
+    element.style.height = window.innerHeight + "px";
+  }
+
+  window.onresize = function(event) {
+    adjustHeightElementToWindow('jumbotron');
+    adjustHeightElementToWindow('jumbotron-background');
+    adjustHeightElementToWindow('elements');
+  };
+
+  adjustHeightElementToWindow('jumbotron');
+  adjustHeightElementToWindow('jumbotron-background');
+  adjustHeightElementToWindow('elements');
+
+
+  $("#elements").hide();
+  $("#explore").click(
     function() {
-      $("#index").animate({ 'zoom': 0 }, 1000);
-      $('#elements').show();
+      $("#welcome").animate({ 'zoom': 3}, 1800);
+      $("#index").animate({ 'zoom': 0 }, 2000);
+      $("#elements").show();
       setTimeout(function(){
         $( "#index").remove();
-      }, 950);
+      }, 1900);
       $("#explore").remove();
     }
   );
