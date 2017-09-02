@@ -1,55 +1,166 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Index</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <div id="index" class="index-depth">
     <div id="jumbotron" class="jumbotron">
-      <div  id="jumbotron-background" class="bg-overlay animated">
+      <div id="jumbotron-background" class="bg-overlay animated">
         <div id="welcome" class="container">
-          <h1>Welcome to my portfolio!</h1>
-          <a class="btn btn-primary btn-lg" id="explore">Explore</a>
+          <a class="btn btn-lg" id="explore"><h1>Welcome to my portfolio!</h1></a>
         </div>
       </div>
     </div>
   </div>
-  <div id="elements" class="elements-depth">
-    <p>
-    <p>
-    <div class="row">
-      <div class="col-lg-6 text-center">
-        <img class="img-circle" src="img/code.PNG" alt="Generic placeholder image" width="150" height="150">
-        <h2>Knowledge</h2>
-        <p><a class="btn btn-default" href="./knowledge.html" role="button">View details »</a></p>
-      </div><!-- /.col-lg-3 -->
-      <div class="col-lg-6 text-center">
-        <img class="img-circle" src="img/project.jpg" alt="Generic placeholder image" width="150" height="150">
-        <h2>Projects WIP</h2>
-        <p><a class="btn btn-default" href="https://github.com/surfer8137" role="button">View details »</a></p>
-      </div><!-- /.col-lg-3 -->
-    </div>
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <img class="img-circle" src="img/project.jpg" alt="Generic placeholder image" width="150" height="150">
-        <h2>Experience WIP</h2>
-        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-      </div><!-- /.col-lg-3 -->
-    </div>
-    <div class="row">
-      <div class="col-lg-6 text-center">
-        <img class="img-circle" src="img/me.png" alt="Generic placeholder image" width="150" height="150">
-        <h2>About WIP</h2>
-        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-      </div><!-- /.col-lg-3 -->
-      <div class="col-lg-6 text-center">
-        <img class="img-circle" src="img/me.png" alt="Generic placeholder image" width="150" height="150">
-        <h2>Contact WIP</h2>
-        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-      </div><!-- /.col-lg-3 -->
+  <div id="elements" class="elements-depth" style="width:100%;height:100%;">
+    <div class="container" height="100%" width="100%" style="margin: 0 0 0 0;">
+      <div class="row" width="100%" height="100%">
+        <div class="col-lg-2" height="100%" width="100%">
+          <ul class="nav nav-pills nav-stacked span2 nav-custom affix">
+            <li style="width:100%;height:20%;">
+              <div class="col-lg-12 text-center object-info">
+                <a class="btn btn-default a-custom" href="#" role="button" onclick="showhtml('me')">
+            <img class="img-circle vertical-image" src="img/me.png" alt="Generic placeholder image">
+              <div class="text-align object-text">About</div>
+          </a>
+              </div>
+            </li>
+            <li style="width:100%;height:20%;">
+              <div class="col-lg-12 text-center object-info">
+                <a class="btn btn-default a-custom" href="https://github.com/surfer8137" role="button" onclick="showhtml('projects')">
+                <img class="img-circle vertical-image" src="img/project.jpg" alt="Generic placeholder image">
+                  <div class="text-align object-text ">Projects WIP</div>
+                </a>
+              </div>
+            </li>
+            <li style="width:100%;height:20%;">
+              <div class="col-lg-12 text-center object-info">
+                <a class="btn btn-default a-custom" href="#" role="button" onclick="showhtml('experience')">
+                <img class="img-circle vertical-image" src="img/project.jpg" alt="Generic placeholder image">
+            <div class="text-align object-text">Experience</div>
+              </a>
+              </div>
+            </li>
+            <li style="width:100%;height:20%;">
+              <div class="col-lg-12 text-center object-info">
+                <a class="btn btn-default a-custom" href="#" role="button" onclick="showhtml('knowledge')">
+                <img class="img-circle vertical-image" src="img/code.PNG" alt="Generic placeholder image">
+                <div class="text-align object-text">Knowledge</div>
+              </a>
+              </div>
+            </li>
+            <li style="width:100%;height:20%;">
+              <div class="col-lg-12 text-center object-info">
+                <a class="btn btn-default a-custom" href="#" role="button" onclick="showhtml('contact')">
+                <img class="img-circle vertical-image" src="img/me.png" alt="Generic placeholder image">
+                <div class="text-align object-text">Contact WIP</div>
+              </a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-lg-10" width="100%" id="content">
+          <h1>Knowledge</h1>
+          <hr>
+          <hr>
+          <h2>Programming Languages</h2>
+          <hr>
+          <div name="languages">
+            <div class="row">
+              <div class="col-lg-4 text-center">
+                <img class="img" src="img/ruby.png" alt="Generic placeholder image" width="140" height="140">
+                <h2>Ruby</h2>
+              </div>
+              <!-- /.col-lg-3 -->
+              <div class="col-lg-4 text-center">
+                <img class="img" src="img/java.png" alt="Generic placeholder image" width="140" height="140">
+                <h2>Java</h2>
+              </div>
+              <!-- /.col-lg-3 -->
+              <div class="col-lg-4 text-center">
+                <img class="img" src="img/csharp.png" alt="Generic placeholder image" width="140" height="140">
+                <h2>C#</h2>
+              </div>
+              <!-- /.col-lg-3 -->
+            </div>
+            <p>
+              <div class="row">
+                <div class="col-lg-4 text-center">
+                  <img class="img" src="img/javascript.png" alt="Generic placeholder image" width="140" height="140">
+                  <h2>JavaScript</h2>
+                </div>
+                <!-- /.col-lg-3 -->
+                <div class="col-lg-4 text-center">
+                  <img class="img" src="img/css.jpg" alt="Generic placeholder image" width="140" height="140">
+                  <h2>CSS</h2>
+                </div>
+                <!-- /.col-lg-3 -->
+                <div class="col-lg-4 text-center">
+                  <img class="img" src="img/html.png" alt="Generic placeholder image" width="140" height="140">
+                  <h2>HTML</h2>
+                </div>
+                <!-- /.col-lg-3 -->
+              </div>
+          </div>
+          <hr>
+          <h2>Technologies</h2>
+          <hr>
+          <div name="technologies">
+            <div class="row">
+              <div class="col-lg-4 text-center">
+                <img class="img" src="img/unity.jpeg" alt="Generic placeholder image" width="140" height="140">
+                <h2>Unity3D</h2>
+              </div>
+              <!-- /.col-lg-3 -->
+              <div class="col-lg-4 text-center">
+                <img class="img" src="img/git.png" alt="Generic placeholder image" width="140" height="140">
+                <h2>Git</h2>
+              </div>
+              <!-- /.col-lg-3 -->
+              <div class="col-lg-4 text-center">
+                <img class="img" src="img/github.png" alt="Generic placeholder image" width="140" height="140">
+                <h2><a href="https://github.com/surfer8137/">Github</a></p></h2>
+                <p>
+              </div>
+              <!-- /.col-lg-3 -->
+            </div>
+            <p>
+              <div class="row">
+                <div class="col-lg-4 text-center">
+                  <img class="img" src="img/codeclimate.jpg" alt="Generic placeholder image" width="140" height="140">
+                  <h2>Codeclimate</h2>
+                </div>
+                <!-- /.col-lg-3 -->
+                <div class="col-lg-4 text-center">
+                  <img class="img" src="img/travis.png" alt="Generic placeholder image" width="140" height="140">
+                  <h2>Travis CI</h2>
+                </div>
+                <!-- /.col-lg-3 -->
+                <div class="col-lg-4 text-center">
+                  <img class="img" src="img/gradle.png" alt="Generic placeholder image" width="140" height="140">
+                  <h2>Gradle</h2>
+                </div>
+                <!-- /.col-lg-3 -->
+              </div>
+              <p>
+                <div class="row">
+
+                  <div class="col-lg-4 text-center">
+                    <img class="img" src="img/heroku.png" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Heroku</h2>
+                  </div>
+                  <!-- /.col-lg-3 -->
+                </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <footer>
@@ -60,37 +171,51 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script>
-
-  adjustHeightElementToWindow = function(elementId){
-    var element = document.getElementById(elementId);
-    element.style.height = window.innerHeight + "px";
-  }
-
-  window.onresize = function(event) {
-    if( document.readyState === "complete" ){
-      adjustHeightElementToWindow('jumbotron');
-      adjustHeightElementToWindow('jumbotron-background');
-      adjustHeightElementToWindow('elements');
+    function showhtml(site){
+      if(site === "knowledge"){
+        $("#content").load('knowledge.html');
+        window.alert("xd");
+      }
+      else{
+        $("#content").html('asd');
+      }
     }
-  };
 
-  adjustHeightElementToWindow('jumbotron');
-  adjustHeightElementToWindow('jumbotron-background');
-  adjustHeightElementToWindow('elements');
-
-
-  $("#elements").hide();
-  $("#explore").click(
-    function() {
-      $("#welcome").animate({ 'zoom': 3}, 1800);
-      $("#index").animate({ 'zoom': 0 }, 2000);
-      $("#elements").show();
-      setTimeout(function(){
-        $( "#index").remove();
-      }, 1900);
-      $("#explore").remove();
+    adjustHeightElementToWindow = function(elementId) {
+      var element = document.getElementById(elementId);
+      element.style.height = window.innerHeight + "px";
     }
-  );
+
+    window.onresize = function(event) {
+      if (document.readyState === "complete") {
+        adjustHeightElementToWindow('jumbotron');
+        adjustHeightElementToWindow('jumbotron-background');
+        adjustHeightElementToWindow('elements');
+      }
+    };
+
+    adjustHeightElementToWindow('jumbotron');
+    adjustHeightElementToWindow('jumbotron-background');
+    adjustHeightElementToWindow('elements');
+
+
+    $("#elements").hide();
+    $("#explore").click(
+      function() {
+        $("#welcome").animate({
+          'zoom': 3
+        }, 1800);
+        $("#index").animate({
+          'zoom': 0
+        }, 2000);
+        $("#elements").show();
+        setTimeout(function() {
+          $("#index").remove();
+        }, 1900);
+        $("#explore").remove();
+      }
+    );
   </script>
 </body>
+
 </html>

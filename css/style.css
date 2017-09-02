@@ -59,3 +59,42 @@ h2, h1{
 .row{
   margin: 0px;
 }
+
+.mainrow{
+  height: 70%;
+}
+
+.vertical-image{
+  width: 80%;
+  height:80%;
+  padding-top: 5%;
+}
+
+.nav-custom{
+  height: 98%;
+  width: 10%;
+  top: 0;
+  overflow: hidden;
+
+}
+
+.object-info{
+  width: 100%;
+  height: 100%;
+}
+
+.a-custom{
+  padding: 0 0 0 0;
+  height: 100%;
+}
+
+.object-text{
+  padding-top: 10%;
+  font-weight: bold;
+  font-family:'Shift', sans-serif;
+
+}
+
+.container{
+  width: 100%;
+}
