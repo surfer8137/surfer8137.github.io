@@ -91,9 +91,7 @@
         adjustHeightElementToWindow('jumbotron');
         adjustHeightElementToWindow('jumbotron-background');
         adjustHeightElementToWindow('elements');
-        setTimeout(function() {
-          $('#me').width($('#meCol').width() * 0.5);
-        }, 500);
+        $('#me').width($('#meCol').width() * 0.5);
       }
     };
 
@@ -120,6 +118,7 @@
     );
 
     showhtml('about');
+    $('#me').width($('#meCol').width() * 0.5);
   </script>
 </body>
 
