@@ -51,6 +51,9 @@
         setTimeout(function() {
           $('#me').width($('#meCol').width() * 0.5);
         }, 1000);
+      } else if (site === "projects") {
+        setActiveTab("projects");
+        $("#content").load('projects.html');
       } else {
         $("#content").html('asd');
       }
