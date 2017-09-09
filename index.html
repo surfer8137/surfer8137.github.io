@@ -81,6 +81,9 @@
         adjustHeightElementToWindow('jumbotron');
         adjustHeightElementToWindow('jumbotron-background');
         adjustHeightElementToWindow('elements');
+        setTimeout(function() {
+          $('#me').width($('#meCol').width() * 0.5);
+        }, 1000);
       }
     };
 
