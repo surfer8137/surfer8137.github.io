@@ -51,7 +51,7 @@
         setTimeout(function() {
           window.alert($("#meCol").width() + ", " + $("#me").width());
           $('#me').width($('#meCol').width() * 0.5);
-        }, 2000);
+        }, 500);
       } else if (site === "projects") {
         setActiveTab("projects");
         $("#content").load('projects.html');
@@ -115,12 +115,11 @@
           $("#index").remove();
         }, 1900);
         $("#explore").remove();
+        setTimeout(function() {
+          showhtml('about');
+        }, 500);
       }
     );
-
-    setTimeout(function(){
-      showhtml('about');
-    }, 1000);
   </script>
 </body>
 
