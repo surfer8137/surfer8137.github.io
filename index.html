@@ -43,8 +43,10 @@
   <script>
     function showhtml(site) {
       if (site === "knowledge") {
+        setActiveTab("knowledge");
         $("#content").load('knowledge.html');
       } else if (site === "about") {
+        setActiveTab("about");
         $("#content").load('about.html');
         setTimeout(function() {
           $('#me').width($('#meCol').width() * 0.5);
@@ -58,6 +60,20 @@
       var element = document.getElementById(elementId);
       if (element != null)
         element.style.height = window.innerHeight + "px";
+    }
+
+    resetActiveTabs = function() {
+      $("#about").class = "";
+      $("#projects").class = "";
+      $("#experience").class = "";
+      $("#knowledge").class = "";
+      $("#contact").class = "";
+    }
+
+    setActiveTab = function(tabName) {
+      resetActiveTabs();
+      var tab = $('#' + tabName);
+      tab.addClass("active");
     }
 
     window.onresize = function(event) {
@@ -91,6 +107,7 @@
     );
 
     showhtml('about');
+    resetActiveTabs();
   </script>
 </body>
 
