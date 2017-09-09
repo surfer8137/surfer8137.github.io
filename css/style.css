@@ -24,7 +24,7 @@ h2, h1, h3, h4{
     background: rgba(0,0,0,0);
 }
 .jumbotron:hover .bg-overlay {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.8);
 }
 .jumbotron .container {
     position: relative;
