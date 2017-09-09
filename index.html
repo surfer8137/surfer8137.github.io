@@ -22,10 +22,10 @@
 
     <ul class="nav nav-tabs nav-justified">
       <li role="presentation" class="active" id="about" onclick="showhtml('about')"><a>Home (About)</a></li>
-      <li role="presentation"  id="projects"><a >Projects</a></li>
-      <li role="presentation"  id="experience"><a>Experience</a></li>
-      <li role="presentation"  id="knowledge"><a onclick="showhtml('knowledge')">Knowledge</a></li>
-      <li role="presentation"  id="contact"><a>Contact</a></li>
+      <li role="presentation" id="projects"><a>Projects</a></li>
+      <li role="presentation" id="experience"><a>Experience</a></li>
+      <li role="presentation" id="knowledge"><a onclick="showhtml('knowledge')">Knowledge</a></li>
+      <li role="presentation" id="contact"><a>Contact</a></li>
     </ul>
 
     <div id="content">
@@ -44,9 +44,12 @@
     function showhtml(site) {
       if (site === "knowledge") {
         $("#content").load('knowledge.html');
-      }else if (site === "about") {
+      } else if (site === "about") {
         $("#content").load('about.html');
-      }  else {
+        setTimeout(function() {
+          $('#me').width($('#meCol').width() * 0.5);
+        }, 10);
+      } else {
         $("#content").html('asd');
       }
     }
@@ -87,7 +90,7 @@
       }
     );
 
-      $("#content").load('about.html');
+    $("#content").load('about.html');
   </script>
 </body>
 
