@@ -49,7 +49,6 @@
         setActiveTab("about");
         $("#content").load('about.html');
         setTimeout(function() {
-          window.alert($("#meCol").width() + ", " + $("#me").width());
           $('#me').width($('#meCol').width() * 0.5);
         }, 500);
       } else if (site === "projects") {
@@ -117,7 +116,7 @@
         $("#explore").remove();
         setTimeout(function() {
           showhtml('about');
-        }, 2000);
+        }, 1800);
       }
     );
   </script>
