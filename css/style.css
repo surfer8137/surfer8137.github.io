@@ -115,3 +115,7 @@ a{
 li{
   cursor: pointer;
 }
+
+.text, li{
+  font-size: 16px;
+}
