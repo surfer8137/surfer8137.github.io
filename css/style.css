@@ -24,7 +24,7 @@ h2, h1, h3, h4{
     background: rgba(0,0,0,0);
 }
 .jumbotron:hover .bg-overlay {
-    background: rgba(0,0,0,0.8);
+    /*background: rgba(0,0,0,0.8);*/
 }
 .jumbotron .container {
     position: relative;
@@ -125,6 +125,7 @@ a{
   color: inherit;
 }
 
+
 a:hover{
   color: grey;
   text-decoration: none;
@@ -132,4 +133,8 @@ a:hover{
 
 .fat{
   font-weight: bold;
+}
+
+.inactive{
+  background-color: lightgrey;
 }

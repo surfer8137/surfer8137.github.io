@@ -18,7 +18,7 @@
     <div id="jumbotron" class="jumbotron">
       <div id="jumbotron-background" class="bg-overlay animated">
         <div id="welcome" class="container">
-          <a class="btn btn-lg" id="explore"><h1>¡Bienvenido!</h1></a>
+          <div class="" id="explore"><h1>¡Bienvenido!</h1></div>
         </div>
       </div>
     </div>
@@ -65,6 +65,24 @@
       }
     }
 
+    initialize = function() {
+      $("#jumbotron-background").css({'background':'rgba(0,0,0,0.8)'});
+      $("#welcome").animate({
+        'zoom': 3
+      }, 1800);
+      $("#index").animate({
+        'zoom': 0
+      }, 2000);
+      $("#elements").show();
+      setTimeout(function() {
+        $("#index").remove();
+        $("#explore").remove();
+      }, 1900);
+      setTimeout(function() {
+        showhtml('about');
+      }, 500);
+    }
+
     adjustHeightElementToWindow = function(elementId) {
       var element = document.getElementById(elementId);
       if (element != null)
@@ -77,6 +95,12 @@
       $("#experience").removeClass();
       $("#knowledge").removeClass();
       $("#contact").removeClass();
+
+      $("#about").addClass("inactive");
+      $("#projects").addClass("inactive");
+      $("#experience").addClass("inactive");
+      $("#knowledge").addClass("inactive");
+      $("#contact").addClass("inactive");
     }
 
     setActiveTab = function(tabName) {
@@ -101,24 +125,8 @@
 
 
     $("#elements").hide();
-    $("#explore").click(
-      function() {
-        $("#welcome").animate({
-          'zoom': 3
-        }, 1800);
-        $("#index").animate({
-          'zoom': 0
-        }, 2000);
-        $("#elements").show();
-        setTimeout(function() {
-          $("#index").remove();
-        }, 1900);
-        $("#explore").remove();
-        setTimeout(function() {
-          showhtml('about');
-        }, 500);
-      }
-    );
+
+    setTimeout(initialize, 2000);
   </script>
 </body>
 
