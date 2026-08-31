@@ -1,133 +1,299 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Portfolio</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ángel Sánchez García · Portfolio</title>
+<meta name="description" content="Ángel Sánchez García — PhD Student &amp; Software Engineer at BDSLab, ITACA (UPV). Software engineering for research and industry: European projects, health data quality and mobile applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:,">
 </head>
-
 <body>
-  <div id="index" class="index-depth">
-    <div id="jumbotron" class="jumbotron">
-      <div id="jumbotron-background" class="bg-overlay animated">
-        <div id="welcome" class="container">
-          <div class="" id="explore"><h1>¡Bienvenido!</h1></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <nav class="nav container">
+    <a class="brand" href="#top">A<span>.</span>S<span>.</span>G<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero container" id="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Barcelona, Spain</p>
+      <h1>Ángel Sánchez García</h1>
+      <p class="hero-role">PhD Student &amp; Software Engineer at <strong>BDSLab · ITACA (UPV)</strong></p>
+      <p class="hero-summary">
+        Software engineer specialising in designing and building software for research and industry —
+        from European R&amp;D projects to mobile health applications — with 7+ years of experience
+        at the Biomedical Data Science Lab (UPV).
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/ángel-sánchez-garcía-05a976105/" target="_blank" rel="noopener">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/profile.jpg" alt="Portrait of Ángel Sánchez García" width="560" height="560">
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title"><span class="tag">01</span>About</h2>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a Computer Science graduate from the Universitat Politècnica de València (UPV),
+          specialised in <strong>software engineering</strong>. I joined the Biomedical Data Science
+          Lab (BDSLab, ITACA-UPV) in 2019, during my Master's in Artificial Intelligence, Pattern
+          Recognition and Digital Imaging, and I'm currently completing my PhD thesis,
+          <em>"Developing Academic Biomedical Software for Regulated Environments: A Case Study
+          Approach"</em>, on how research software can be engineered for real deployment in regulated
+          environments.
+          <br><br>
+          I design and build <strong>data-integrity systems</strong> for pharmaceutical manufacturing
+          and hospital pharmacy, a <strong>European data-quality labelling tool</strong> for the Health
+          Data Space, and <strong>monitoring frameworks for trustworthy clinical AI</strong> —
+          translating regulations such as GAMP 5, the EHDS and the EU AI Act into deployable software.
+          I'm also part of the team that maintains BDSLab's information systems, and I work across
+          <strong>full-stack, web and mobile development</strong>, following
+          <strong>agile methodologies</strong>.
+        </p>
+        <ul class="about-facts">
+          <li><span>7+</span>years of experience</li>
+          <li><span>PhD</span>In progress · UPV, since 2022</li>
+          <li><span>4+</span>R&amp;D &amp; industry projects</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title"><span class="tag">02</span>Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>SW Engineer &amp; Researcher</h3>
+              <span class="timeline-date">February 2019 — Present</span>
+            </div>
+            <p class="timeline-org">Biomedical Data Science Lab (BDSLab) · ITACA, UPV — Valencia, Spain</p>
+            <p class="timeline-desc">
+              Design and development of software for industry-oriented research groups, combining
+              software engineering with applied research. Involved in European and technology-transfer
+              projects across the pharmaceutical, biomedical and agri-food sectors. Member of the team
+              responsible for BDSLab's information systems.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title"><span class="tag">03</span>Education</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Doctorate (PhD)</h3>
+              <span class="timeline-date">In progress · since Oct. 2022</span>
+            </div>
+            <p class="timeline-org">Universitat Politècnica de València (UPV)</p>
+            <p class="timeline-desc">Software development for industry-oriented research groups.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Master's in Artificial Intelligence, Pattern Recognition and Digital Imaging</h3>
+              <span class="timeline-date">2018 — 2019</span>
+            </div>
+            <p class="timeline-org">Universitat Politècnica de València (UPV)</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>BSc in Computer Science</h3>
+              <span class="timeline-date">2014 — 2018</span>
+            </div>
+            <p class="timeline-org">Universitat Politècnica de València (UPV)</p>
+            <p class="timeline-desc">Specialised in software engineering.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="tag">04</span>Skills</h2>
+      <div class="skills-grid">
+        <div class="skills-card">
+          <h3>Areas of work</h3>
+          <ul class="pill-list">
+            <li>Software Engineering</li>
+            <li>Full Stack Development</li>
+            <li>Web Development</li>
+            <li>Mobile App Development</li>
+            <li>Application Prototyping</li>
+            <li>Agile Methodologies</li>
+          </ul>
+        </div>
+        <div class="skills-card">
+          <h3>Programming</h3>
+          <ul class="pill-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>Android (Java)</li>
+            <li>React Native</li>
+            <li>C#</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Machine Learning</li>
+          </ul>
+        </div>
+        <div class="skills-card">
+          <h3>Operating Systems</h3>
+          <ul class="pill-list">
+            <li>Linux</li>
+            <li>Windows</li>
+            <li>Windows Server</li>
+            <li>macOS</li>
+          </ul>
+        </div>
+        <div class="skills-card">
+          <h3>Systems &amp; DevOps</h3>
+          <ul class="pill-list">
+            <li>Terminal / Shell</li>
+            <li>Git</li>
+            <li>GitLab</li>
+            <li>CI/CD</li>
+            <li>Docker</li>
+            <li>Nginx</li>
+          </ul>
+        </div>
+        <div class="skills-card">
+          <h3>Spoken Languages</h3>
+          <ul class="pill-list">
+            <li>Spanish — Native</li>
+            <li>English — C1</li>
+          </ul>
+        </div>
+        <div class="skills-card">
+          <h3>Certifications</h3>
+          <ul class="plain-list">
+            <li>First Certificate in English (C1)</li>
+            <li>Escuela Oficial de Idiomas — English B1</li>
+            <li>Valencian — C1</li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
-  <div id="elements" class="elements-depth" style="width:100%;height:100%;">
+  </section>
 
-    <ul class="nav nav-tabs nav-justified">
-      <li role="presentation" class="active" id="about" onclick="showhtml('about')"><a>Sobre mi</a></li>
-      <li role="presentation" id="projects" onclick="showhtml('projects')"><a>Proyectos</a></li>
-      <li role="presentation" id="experience" onclick="showhtml('experience')"><a>Experiencia</a></li>
-      <li role="presentation" id="knowledge"><a onclick="showhtml('knowledge')">Conocimiento</a></li>
-      <li role="presentation" id="contact" onclick="showhtml('contact')"><a>Contacto</a></li>
-    </ul>
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title"><span class="tag">05</span>Projects &amp; Publications</h2>
 
-    <div id="content">
+      <div class="projects-grid">
+        <article class="project-card">
+          <span class="project-tag">CHIST-ERA · AEI · 2019–2022</span>
+          <h3>SPuMoNI</h3>
+          <p>Data-quality and integrity assessment system (DIALCOA) for pharmaceutical
+          manufacturing, validated in a real CMO under EU-GMP standards.</p>
+          <a class="project-link" href="https://doi.org/10.1016/j.bdr.2020.100172" target="_blank" rel="noopener">Related paper — Big Data Research (2021) ↗</a>
+          <a class="project-link" href="https://doi.org/10.1007/s12247-023-09748-z" target="_blank" rel="noopener">Related paper — J. Pharma. Innovation (2023) ↗</a>
+        </article>
+        <article class="project-card">
+          <span class="project-tag">AEI · 2023–2024</span>
+          <h3>MagicA</h3>
+          <p>Regulatory-aware digital quality-control system for hospital pharmacy compounding,
+          deployed and validated at Hospital Dr. Peset (Valencia).</p>
+        </article>
+        <article class="project-card">
+          <span class="project-tag">European Commission · 2024–2026</span>
+          <h3>QUANTUM — HealthData@EU</h3>
+          <p>Data quality, utility and organisational-maturity labelling tool for the European
+          Health Data Space (EHDS Article 78).</p>
+          <a class="project-link" href="https://doi.org/10.1093/eurpub/ckag009" target="_blank" rel="noopener">Related paper — Eur. J. Public Health (2026) ↗</a>
+        </article>
+        <article class="project-card">
+          <span class="project-tag">AEI · 2024–2026</span>
+          <h3>KINEMAI</h3>
+          <p>Robustness, fairness and dataset-shift monitoring framework for trustworthy
+          clinical AI (ShinAI-Agent), aligned with the EU AI Act.</p>
+        </article>
+        <article class="project-card">
+          <span class="project-tag">Mobile app</span>
+          <h3>lalaby</h3>
+          <p>Smartphone app to monitor quality of life in lung cancer patients through phone
+          sensors and integrated questionnaires.</p>
+          <a class="project-link" href="https://doi.org/10.3390/ijerph16030461" target="_blank" rel="noopener">Related paper — IJERPH (2019) ↗</a>
+          <a class="project-link" href="https://doi.org/10.1080/10447318.2022.2121561" target="_blank" rel="noopener">Related paper — Int. J. Human–Computer Interaction (2024) ↗</a>
+        </article>
+        <article class="project-card">
+          <span class="project-tag">Agri-food</span>
+          <h3>Agri-food predictive models</h3>
+          <p>Development of predictive models for the agri-food sector.</p>
+        </article>
+      </div>
 
+      <p class="empty-state-hint">PhD thesis: <em>"Developing Academic Biomedical Software for Regulated Environments: A Case Study Approach"</em> — more publications and links welcome, send them over and I'll keep this updated.</p>
     </div>
+  </section>
 
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title"><span class="tag">06</span>Contact</h2>
+        <p class="contact-lead">Interested in a project, a collaboration, or an opportunity? Get in touch.</p>
+      </div>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/ángel-sánchez-garcía-05a976105/" target="_blank" rel="noopener">/in/ángel-sánchez-garcía</a>
+        </li>
+        <li>
+          <span class="contact-label">Location</span>
+          <span>Barcelona, Spain</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Ángel Sánchez García</p>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
   </div>
-  <footer>
-  </footer>
-  <script>
-    function showhtml(site) {
-      if (site === "knowledge") {
-        setActiveTab("knowledge");
-        $("#content").load('knowledge.html');
-      } else if (site === "about") {
-        setActiveTab("about");
-        $("#content").load('about.html');
-        setTimeout(function() {
-          $('#me').width($('#meCol').width() * 0.5);
-        }, 500);
-      } else if (site === "projects") {
-        setActiveTab("projects");
-        $("#content").load('projects.html');
-      } else if (site === "experience") {
-        setActiveTab("experience");
-        $("#content").load('experience.html');
-      } else if (site === "contact") {
-        setActiveTab("contact");
-        $("#content").load('contact.html');
-      } else {
-        $("#content").html('asd');
-      }
-    }
+</footer>
 
-    initialize = function() {
-      $("#jumbotron-background").css({'background':'rgba(0,0,0,0.8)'});
-      $("#welcome").animate({
-        'zoom': 3
-      }, 1800);
-      $("#index").animate({
-        'zoom': 0
-      }, 2000);
-      $("#elements").show();
-      setTimeout(function() {
-        $("#index").remove();
-        $("#explore").remove();
-      }, 1900);
-      setTimeout(function() {
-        showhtml('about');
-      }, 500);
-    }
-
-    adjustHeightElementToWindow = function(elementId) {
-      var element = document.getElementById(elementId);
-      if (element != null)
-        element.style.height = window.innerHeight + "px";
-    }
-
-    resetActiveTabs = function() {
-      $("#about").removeClass();
-      $("#projects").removeClass();
-      $("#experience").removeClass();
-      $("#knowledge").removeClass();
-      $("#contact").removeClass();
-
-      $("#about").addClass("inactive");
-      $("#projects").addClass("inactive");
-      $("#experience").addClass("inactive");
-      $("#knowledge").addClass("inactive");
-      $("#contact").addClass("inactive");
-    }
-
-    setActiveTab = function(tabName) {
-      resetActiveTabs();
-      var tab = $('#' + tabName);
-      tab.addClass("active");
-      tab.addClass("fat");
-    }
-
-    window.onresize = function(event) {
-      if (document.readyState === "complete") {
-        adjustHeightElementToWindow('jumbotron');
-        adjustHeightElementToWindow('jumbotron-background');
-        adjustHeightElementToWindow('elements');
-        $('#me').width($('#meCol').width() * 0.5);
-      }
-    };
-
-    adjustHeightElementToWindow('jumbotron');
-    adjustHeightElementToWindow('jumbotron-background');
-    adjustHeightElementToWindow('elements');
-
-
-    $("#elements").hide();
-
-    setTimeout(initialize, 2000);
-  </script>
+<script src="js/script.js"></script>
 </body>
-
 </html>
