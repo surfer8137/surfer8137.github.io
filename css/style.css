@@ -320,6 +320,17 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; margin: 0; }
 
 .timeline-org { margin: 6px 0 0; color: var(--accent); font-weight: 500; font-size: 0.95rem; }
 .timeline-desc { margin: 10px 0 0; color: var(--text-muted); max-width: 620px; }
+.timeline-bullets {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: var(--text-muted);
+  max-width: 720px;
+  display: grid;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+.timeline-bullets li::marker { color: var(--accent); }
+.timeline-bullets strong { color: var(--text); }
 
 /* ---------- Skills ---------- */
 
@@ -411,6 +422,36 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; margin: 0; }
   margin-top: 2px;
 }
 .project-link:hover { text-decoration: underline; }
+
+/* ---------- Publications ---------- */
+
+.pub-intro { color: var(--text-muted); margin: 0 0 8px; }
+.pub-intro a { color: var(--accent); font-weight: 600; }
+.pub-intro a:hover { text-decoration: underline; }
+
+.pub-group {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  margin: 32px 0 12px;
+}
+
+.pub-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.pub-list li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.pub-list a { color: var(--text); font-weight: 600; line-height: 1.45; }
+.pub-list a:hover { color: var(--accent); }
+.pub-venue { color: var(--text-muted); font-size: 0.88rem; font-style: italic; }
 
 .empty-state {
   border: 1.5px dashed var(--border);
